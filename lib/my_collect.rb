@@ -1,12 +1,14 @@
 def my_collect(arr)
   if block_given?
-  i = 0
+    i = 0
 
   while i < arr.length
     yield arr[i]
     i += 1
   end
-else
-  "No block given."
+  else
+    "No block given."
 end
+  my_collect
 end
+ 

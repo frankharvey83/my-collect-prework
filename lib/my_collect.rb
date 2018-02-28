@@ -9,5 +9,4 @@ def my_collect(arr)
   else
     "No block given."
 end
-  my_collect
 end

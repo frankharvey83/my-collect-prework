@@ -1,12 +1,14 @@
 def my_collect(arr)
   if block_given?
     i = 0
-
+    new_arr = []
+    
   while i < arr.length
-    yield arr[i]
+    new_arr.push(yield arr[i])
     i += 1
   end
   else
     "No block given."
-end
+  end
+  new_arr
 end
